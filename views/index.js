@@ -1,3 +1,6 @@
+// The below functions are simple DOM modification functions, which function as a rendering framework -- similar to the way that AngularJS or ReactJS work,
+// but obviously way more rudimentary
+
 const appendToBody = (data) => {
     let body = document.getElementsByTagName('body')[0];
     body.appendChild(data);
