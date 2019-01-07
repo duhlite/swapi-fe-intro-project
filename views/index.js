@@ -14,6 +14,7 @@ const createElement = (elementName, id) => {
 }
 
 const removeElementById = (id) => {
+    // seems a little complex -- but essentially what this does is it gets an element, then gets its parent, then removes the child of that particular parent
     document.getElementById(id).parentElement.removeChild(document.getElementById(id));
 }
 
@@ -22,7 +23,7 @@ const getQueryString = () => {
     return window.location.search;
 }
 
-// // how to define loadMyContent():
+// // how i would define loadMyContent():
 // //
 // // here you should parse the query string to get an idea of what data needs to be loaded
 // // loading data asynchronously over the web requires using the concept of promises: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
