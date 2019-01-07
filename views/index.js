@@ -16,6 +16,14 @@ const createElement = (elementName, id) => {
     return elem;
 }
 
+const modifyClassOfElement = (elementId, newClassName) => {
+    document.getElementById(elementId).setAttribute('class', newClassName);
+}
+
+const getClassOfElement = (elementId) => {
+    return document.getElementById(elementId).getAttribute('class');
+}
+
 const removeElementById = (id) => {
     // seems a little complex -- but essentially what this does is it gets an element, then gets its parent, then removes the child of that particular parent
     document.getElementById(id).parentElement.removeChild(document.getElementById(id));
