@@ -46,11 +46,14 @@ const getQueryString = () => {
 // // how i would define loadMyContent():
 // //
 // // here you should parse the query string to get an idea of what data needs to be loaded
-// // loading data asynchronously over the web requires using the concept of promises: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
-// // promises can be tricky, so it might be worth researching promises using other resources
+// // loading data asynchronously over the web requires using the concept of promises (as taught in Eloquent, chapter 11): 
+// // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
+// // promises can be tricky, even after all this reading, so it might be worth researching promises using other resources
 // // use the fetch API to get data -- https://developers.google.com/web/updates/2015/03/introduction-to-fetch, https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
-// // fetch all subsequent pieces of data -- remember: fetch uses Promises under the hood, and there are different ways to conduct multiple fetches at the same time, and then do something once
-// // everything has resolved
+// // fetch all subsequent pieces of data -- 
+// // remember: fetch uses Promises under the hood, and there are different ways to conduct multiple fetches at the same time, 
+// // and then do something once everything has resolved
+// //  (re-read Eloquent, chapter 11, if you get stuck)
 // //
 // // at the end of the function, modify the elements of the page: remove the loading indicator, and add data to the page
 
