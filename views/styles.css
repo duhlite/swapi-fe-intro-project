@@ -1,13 +1,6 @@
 body {
     display: flex;
 }
-
-#loading {
-    width: 500px;
-    height: 500px;
-    background-color: blue;
-    color: yellow;
-}
 #root {
     max-width: 1200px;
     margin: 0 auto;
@@ -29,4 +22,13 @@ body {
     .card{
         flex: 1 1 calc(33% - 2rem);
     }
+.content{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, .2);
+    z-index: 1;
+}
 }

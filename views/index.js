@@ -58,27 +58,15 @@ const getQueryString = () => {
 // // at the end of the function, modify the elements of the page: remove the loading indicator, and add data to the page
 const app = document.getElementById('root');
 
-const container = document.createElement('div');
-container.setAttribute('class', 'container');
-app.appendChild(container);
-
 function loadMyContent () {
  // do your page operations here
  fetch('https://swapi.co/api/films/').then(response => {
      return response.json();
  }).then(data => {
      for(let x = 0; x < data.results.length; x++){
-        const card = document.createElement('div');
-        card.setAttribute('class', 'card');
-        const h1 = document.createElement('h1');
-        h1.textContent = data.results[x].title;
+        document.getElementById(`film${x}`).textContent = data.results[x].title;     
 
-        const p = document.createElement('p');
-        p.textContent = `${data.results[x].opening_crawl}`;
-        container.appendChild(card);
-
-        card.appendChild(h1);
-        card.appendChild(p);
+        document.getElementById(`crawl${x}`).textContent = `${data.results[x].opening_crawl}`;
      }
  }).catch(err => {
      console.log('error');
